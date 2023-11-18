@@ -13,5 +13,6 @@ jobs:
       - name: Install dependencies
         run: yarn
       - name: Run test
+        path: 2nd/02 Starting Project
         run: yarn test
   
