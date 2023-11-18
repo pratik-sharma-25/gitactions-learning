@@ -16,8 +16,7 @@ jobs:
           cmd: install
       - name: Test the app
         uses: borales/actions-yarn@v4
-        run: |
-          cd 2nd
-          cd 02\ Starting\ Project 
-          yarn test
+        with:
+          cmd: test
+          dir: '2nd/02\ Starting\ Project' 
   
