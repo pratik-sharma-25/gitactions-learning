@@ -11,10 +11,10 @@ jobs:
         with: 
           node-version: 18
       - name: Install dependencies
-        run: yarn
+        run: npm ci
       - name: Run test
         run: |
           cd 2nd
           cd 02\ Starting\ Project 
-          yarn test
+          npm run test
   
