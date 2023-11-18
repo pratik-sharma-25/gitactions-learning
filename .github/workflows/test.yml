@@ -16,6 +16,6 @@ jobs:
         run: |
           cd 2nd
           cd 02\ Starting\ Project 
-          npm run test
+          npm run  test
 
   
