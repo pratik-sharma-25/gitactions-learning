@@ -11,12 +11,11 @@ jobs:
         with: 
           node-version: 18
       - name: Install dependencies
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: install
-      - name: Test the app
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: test
-          dir: '2nd/02\ Starting\ Project' 
+        run: npm ci
+      - name: Run test
+        run: |
+          cd 2nd
+          cd 02\ Starting\ Project 
+          npm run test
+
   
