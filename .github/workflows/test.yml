@@ -14,7 +14,8 @@ jobs:
         uses: borales/actions-yarn@v4
         with:
           cmd: install
-      - name: Run test
+      - name: Test the app
+        uses: borales/actions-yarn@v4
         run: |
           cd 2nd
           cd 02\ Starting\ Project 
